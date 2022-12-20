@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meetpro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="main">
+        <section class="instruction">
+            <div class="container">
+                <h1>Here u can schedule your meetings</h1>
+                <p>Enter meeting start and finish timings and click <span>Save</span></p>
+                <p>Then enter another meet timings</p>
+                <p>To find maximum meetings that can be attended click <span>Result</span></p>
+                <p
+                    style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                    <b><i>Note:</i></b>&nbsp; Please click <span>clear</span> button before using this application
+                </p>
+            </div>
+        </section>
+        <hr>
+        <section class="inputs">
+            <div class="container">
+                <h2>Meeting timings</h2>
+                <div class="startTiming">
+                    <label for="startTime">Starting Time</label>
+                    <input type="number" name="startTime" id="st" class="myInputs">
+                    <!-- <input type="time" name="timr" id=""> -->
+
+                </div>
+                <br>
+                <div class="endTiming">
+                    <label for="endTime">Finishing Time</label>
+                    <input type="number" name="endTime" id="et" class="myInputs">
+                </div>
+                <br>
+                <button class="btn" onclick="store()">Save</button>
+                <button class="btn" onclick="showResult()">Result</button>
+                <button class="btn" onclick="clr()">clear</button>
+            </div>
+        </section>
+        <br>
+        <hr>
+        <section class="outputs">
+            <div class="output-text">
+                <h4>Meetings to attend:</h4>
+                <ul id="meeting-list">
+                    <!-- <li>Meet 1</li>
+                    <li>Meet 2</li>
+                    <li>Meet 3</li> -->
+                </ul>
+
+            </div>
+        </section>
+
+
+    </main>
+    <footer>
+        <p>&copy; 2022</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
