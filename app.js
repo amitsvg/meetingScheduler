@@ -1,5 +1,6 @@
 // How do I clear my local storage reload?
 // window.onbeforeunload = () => { localStorage.clear(); };
+
 // Function for finding maximum meeting in one room
 function maxMeetings(s, f, n) {
     let a = new Array(n + 1);
